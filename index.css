@@ -1,0 +1,96 @@
+.main-header {
+    font-size: 28px;
+}
+
+textarea {
+    resize: none;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.req::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+label {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.form-control {
+    border: 1px solid rgb(18, 151, 0);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-wrapper {
+    background-color: rgb(233, 224, 224);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* 
+.rate label {
+    display: none;
+}
+
+.rate input:checked {
+    content: '★ ';
+} */
+
+.star-col {
+    display: flex;
+}
+
+.star-col>input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    margin-left: 7px;
+    background-color: rgb(8, 8, 8);
+    clip-path: polygon(50% 0, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+}
+
+
+/* .str:checked {
+    background-color: rgb(224, 0, 0);
+    clip-path: polygon(50% 0, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+}
+
+.star-col input[name="str"] {
+    background-color: rgb(8, 8, 8);
+    clip-path: polygon(50% 0, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+    width: 25px;
+    height: 25px;
+    margin-left: 7px;
+} */
+
+.star-col>input[type="radio"]:checked {
+    z-index: 9999;
+    background-color: rgb(212, 0, 0);
+    clip-path: polygon(50% 0, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0 38%, 37% 38%);
+    /* width: 25px;
+    height: 25px; */
+    margin-left: 7px;
+}
+
+@media(min-width:280px) and (max-width:770px) {
+    .mob {
+        display: block;
+    }
+    .lap {
+        display: none;
+    }
+}
+
+@media(min-width:771px) {
+    .mob {
+        display: none;
+    }
+}
